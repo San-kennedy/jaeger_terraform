@@ -1,6 +1,3 @@
-#userdata script for elasticsearch node
-# install default elasticsearch and start up
-
 #!/bin/bash
 
 #Fail fast (Exit immediately if one command fails)
@@ -11,6 +8,7 @@ wget -P /opt https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-
 wget -P /opt https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-oss-6.4.3.deb.sha512
 
 #install default jdk
+sudo apt-get update
 sudo apt-get -y install default-jdk
 
 cd /opt
